@@ -488,4 +488,68 @@ public class BusinessNegotiationAction extends BaseFileAction{
             throw new ActException(e.getMessage());
         }
     }
+//    /**
+//     * 获取地区
+//     *
+//     * @version v1
+//     */
+//    @GetMapping("v1/area")
+//    public Result listArea() throws ActException {
+//        try {
+//            List<ProblemAcceptBO> bos = projectProblemAccAPI.findListProblemAccept(new ProblemAcceptDTO());
+//            if (null == bos) {
+//                return ActResult.initialize(null);
+//            }
+//            Set<String> set = new HashSet<>();
+//            for (ProblemAcceptBO bo : bos) {
+//                set.add(bo.getArea());
+//            }
+//            return ActResult.initialize(set);
+//        } catch (SerException e) {
+//            throw new ActException(e.getMessage());
+//        }
+//    }
+
+//    /**
+//     * 获取项目组部门
+//     *
+//     * @version v1
+//     */
+//    @GetMapping("v1/department")
+//    public Result listDepartment() throws ActException {
+//        try {
+//            List<ProblemAcceptBO> bos = projectProblemAccAPI.findListProblemAccept(new ProblemAcceptDTO());
+//            if (null == bos) {
+//                return ActResult.initialize(null);
+//            }
+//            Set<String> set = new HashSet<>();
+//            for (ProblemAcceptBO bo : bos) {
+////                set.add(bo.getAffectedDepartment());
+//            }
+//
+//            return ActResult.initialize(set);
+//        } catch (SerException e) {
+//            throw new ActException(e.getMessage());
+//        }
+//    }
+
+//    /**
+//     * 获取问题受理编号（对内）
+//     *
+//     * @version v1
+//     */
+//    @GetMapping("v1/problemNum")
+//    public Result problemNum() throws ActException {
+//        try {
+//            List<ProblemAcceptBO> bos = projectProblemAccAPI.findListProblemAccept(new ProblemAcceptDTO());
+//            Set<String> set = new HashSet<>();
+//            for (ProblemAcceptBO bo : bos) {
+//                set.add(bo.getProjectNum());
+//            }
+//            return ActResult.initialize(set);
+//        } catch (SerException e) {
+//            throw new ActException(e.getMessage());
+//        }
+//    }
+
 }

@@ -79,10 +79,10 @@ include ':modules:intromanage:intromanage-provider'
 //include ':modules:materialsummary:materialsummary-api'
 //include ':modules:materialsummary:materialsummary-consumer'
 //include ':modules:materialsummary:materialsummary-provider'
-////#materialinstock --物质入库
-//include ':modules:materialinstock:materialinstock-api'
-//include ':modules:materialinstock:materialinstock-consumer'
-//include ':modules:materialinstock:materialinstock-provider'
+//#materialinstock --物质入库
+include ':modules:materialinstock:materialinstock-api'
+include ':modules:materialinstock:materialinstock-consumer'
+include ':modules:materialinstock:materialinstock-provider'
 ////#materialreceive --物质领用
 //include ':modules:materialreceive:materialreceive-api'
 //include ':modules:materialreceive:materialreceive-consumer'
@@ -338,3 +338,20 @@ include ':modules:enterpriseculturemanage:enterpriseculturemanage-provider'
 include ':modules:materialbuy:materialbuy-api'
 include ':modules:materialbuy:materialbuy-consumer'
 include ':modules:materialbuy:materialbuy-provider'
+
+//workjoin 工作交接
+include ':modules:workjoin:workjoin-api'
+include ':modules:workjoin:workjoin-consumer'
+include ':modules:workjoin:workjoin-provider'
+
+include ':modules:datastore:datastore-api'
+include ':modules:datastore:datastore-consumer'
+include ':modules:datastore:datastore-provider'
+
+include ':modules:datastore:datastore-api'
+include ':modules:datastore:datastore-consumer'
+include ':modules:datastore:datastore-provider'
+
+include ':modules:problemhandle:problemhandle-api'
+include ':modules:problemhandle:problemhandle-consumer'
+include ':modules:problemhandle:problemhandle-provider'
