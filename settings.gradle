@@ -355,3 +355,7 @@ include ':modules:datastore:datastore-provider'
 include ':modules:problemhandle:problemhandle-api'
 include ':modules:problemhandle:problemhandle-consumer'
 include ':modules:problemhandle:problemhandle-provider'
+
+include ':modules:projectprocing:projectprocing-api'
+include ':modules:projectprocing:projectprocing-consumer'
+include ':modules:projectprocing:projectprocing-provider'

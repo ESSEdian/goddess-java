@@ -477,10 +477,11 @@ public class UserSerImpl extends ServiceImpl<User, UserDTO> implements UserSer {
         UserBO userBO = this.currentUser();
         RpcTransmit.transmitUserToken(userToken);
         String employeeNumber = (userBO.getEmployeeNumber()).substring(0, 4);
-        String[] employeeNumbers = new String[]{employeeNumber};
         String sql = "SELECT id,sex,realName,departmentName,positionName\n" +
                 "FROM user_detail\n" +
-                "WHERE meetingNumber='" + employeeNumbers + "'";
+                "WHERE meetingNumber='" + employeeNumber + "'";
+        String[] fields = new String[]{"id", "sex", "realName", "departmentName", "positionName"};
+        List<UserDetailBO> list = super.findBySql(sql, UserDetailBO.class, fields);
 //        List<UserDetailBO> list =
 //        String[] meetingNumbers = new String[]{meetingNumber};
 //        List<Organization> list = null;
@@ -495,8 +496,7 @@ public class UserSerImpl extends ServiceImpl<User, UserDTO> implements UserSer {
 //            return list.get(0);
 //        }
 //        return null;
-        String[] fields = new String[]{"id", "sex", "realName", "departmentName", "positionName"};
-        return null;
+        return list;
     }
 
 
